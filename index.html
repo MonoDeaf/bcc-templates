@@ -1,0 +1,261 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Label Message Tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <nav class="sidebar">
+                <div class="nav-group">
+                    <button class="nav-group-btn" data-group="response-messages">
+                        <span>Response Messages</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="nav-dropdown" data-group="response-messages">
+                        <button class="nav-btn active" data-section="demo-accept">Demo Accepts</button>
+                        <button class="nav-btn" data-section="demo-decline">Demo Declines</button>
+                    </div>
+                </div>
+                
+                <div class="nav-group">
+                    <button class="nav-group-btn" data-group="blog-templates">
+                        <span>Blog Templates</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="nav-dropdown" data-group="blog-templates">
+                        <button class="nav-btn" data-section="blog">Blog Templates</button>
+                    </div>
+                </div>
+                
+                <div class="nav-group">
+                    <button class="nav-group-btn" data-group="content-descriptions">
+                        <span>Content Descriptions</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="nav-dropdown" data-group="content-descriptions">
+                        <button class="nav-btn" data-section="music-dsp">Music DSP</button>
+                        <button class="nav-btn" data-section="video-description">Video Description</button>
+                        <button class="nav-btn" data-section="social-media">Social Media</button>
+                    </div>
+                </div>
+                
+                <div class="nav-group">
+                    <button class="nav-group-btn" data-group="canva-templates">
+                        <span>Canva Templates</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="nav-dropdown" data-group="canva-templates">
+                        <button class="nav-btn" data-section="album-cover">Album Cover</button>
+                        <button class="nav-btn" data-section="artist-promo">Artist Promo</button>
+                        <button class="nav-btn" data-section="event-flyer">Event Flyer</button>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="content-area">
+                <!-- Demo Accept Section -->
+                <div id="demo-accept" class="section active">
+                    <h2>Demo Acceptance Messages</h2>
+                    <div class="template-grid">
+                        <div class="template-card" data-template="accept-standard">
+                            <h3>Standard Accept</h3>
+                            <p>Professional acceptance with next steps</p>
+                            <button class="copy-btn">Copy Template</button>
+                        </div>
+                        <div class="template-card" data-template="accept-excited">
+                            <h3>Excited Accept</h3>
+                            <p>Enthusiastic acceptance for standout demos</p>
+                            <button class="copy-btn">Copy Template</button>
+                        </div>
+                        <div class="template-card" data-template="accept-conditional">
+                            <h3>Conditional Accept</h3>
+                            <p>Accept with minor changes needed</p>
+                            <button class="copy-btn">Copy Template</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Demo Decline Section -->
+                <div id="demo-decline" class="section">
+                    <h2>Demo Decline Messages</h2>
+                    <div class="template-grid">
+                        <div class="template-card" data-template="decline-not-fit">
+                            <h3>Not a Fit</h3>
+                            <p>Polite decline - doesn't match label style</p>
+                            <button class="copy-btn">Copy Template</button>
+                        </div>
+                        <div class="template-card" data-template="decline-quality">
+                            <h3>Quality Issues</h3>
+                            <p>Constructive feedback on production quality</p>
+                            <button class="copy-btn">Copy Template</button>
+                        </div>
+                        <div class="template-card" data-template="decline-full-roster">
+                            <h3>Full Roster</h3>
+                            <p>Decline due to capacity constraints</p>
+                            <button class="copy-btn">Copy Template</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music DSP Section -->
+                <div id="music-dsp" class="section">
+                    <h2>Music DSP Descriptions</h2>
+                    <div class="template-grid">
+                        <div class="template-card" data-template="music-release">
+                            <h3>Music Release</h3>
+                            <p>Template for new music announcements</p>
+                            <button class="copy-btn">Copy Template</button>
+                        </div>
+                        <div class="template-card" data-template="artist-spotlight">
+                            <h3>Artist Spotlight</h3>
+                            <p>Template for featuring artists</p>
+                            <button class="copy-btn">Copy Template</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Description Section -->
+                <div id="video-description" class="section">
+                    <h2>Video Descriptions</h2>
+                    <div class="template-grid">
+                        <div class="template-card" data-template="video-release">
+                            <h3>Video Release</h3>
+                            <p>Template for music video announcements</p>
+                            <button class="copy-btn">Copy Template</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Templates Section -->
+                <div id="blog" class="section">
+                    <h2>Blog Templates</h2>
+                    <div class="template-grid">
+                        <div class="template-card" data-template="pulse-pick">
+                            <h3>Pulse Pick</h3>
+                            <p>Feature a random Spotify track with detailed analysis</p>
+                            <button class="copy-btn">Copy Template</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Album Cover Section -->
+                <div id="album-cover" class="section">
+                    <h2>Album Cover Templates</h2>
+                    <div class="template-grid">
+                        <div class="template-card" data-template="album-cover-brief">
+                            <h3>Album Cover Brief</h3>
+                            <p>Detailed brief for album artwork design</p>
+                            <button class="canva-btn">Open in Canva</button>
+                        </div>
+                        <div class="template-card" data-template="single-cover-brief">
+                            <h3>Single Cover Brief</h3>
+                            <p>Quick brief for single artwork design</p>
+                            <button class="canva-btn">Open in Canva</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Section -->
+                <div id="social-media" class="section">
+                    <h2>Social Media Templates</h2>
+                    <div class="template-grid">
+                        <div class="template-card" data-template="instagram-post">
+                            <h3>Instagram Post</h3>
+                            <p>Template for Instagram music posts</p>
+                            <button class="copy-btn">Copy Template</button>
+                        </div>
+                        <div class="template-card" data-template="instagram-story">
+                            <h3>Instagram Story</h3>
+                            <p>Template for Instagram story designs</p>
+                            <button class="copy-btn">Copy Template</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist Promo Section -->
+                <div id="artist-promo" class="section">
+                    <h2>Artist Promo Templates</h2>
+                    <div class="template-grid">
+                        <div class="template-card" data-template="artist-spotlight-graphic">
+                            <h3>Artist Spotlight Graphic</h3>
+                            <p>Visual template for artist features</p>
+                            <button class="canva-btn">Open in Canva</button>
+                        </div>
+                        <div class="template-card" data-template="new-artist-announcement">
+                            <h3>New Artist Announcement</h3>
+                            <p>Template for announcing new signings</p>
+                            <button class="canva-btn">Open in Canva</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Flyer Section -->
+                <div id="event-flyer" class="section">
+                    <h2>Event Flyer Templates</h2>
+                    <div class="template-grid">
+                        <div class="template-card" data-template="concert-flyer">
+                            <h3>Concert Flyer</h3>
+                            <p>Template for concert event flyers</p>
+                            <button class="canva-btn">Open in Canva</button>
+                        </div>
+                        <div class="template-card" data-template="listening-party">
+                            <h3>Listening Party</h3>
+                            <p>Template for album listening party events</p>
+                            <button class="canva-btn">Open in Canva</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Templates Section -->
+                <div id="custom" class="section">
+                    <h2>Custom Templates</h2>
+                    <div class="custom-template-form">
+                        <input type="text" id="template-name" placeholder="Template Name">
+                        <textarea id="template-content" placeholder="Write your custom template here..."></textarea>
+                        <button id="save-template">Save Template</button>
+                    </div>
+                    <div id="custom-templates-list" class="template-grid">
+                        <!-- Custom templates will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Message Editor Modal -->
+        <div id="message-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modal-title">Edit Message</h3>
+                    <button class="close-btn">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <textarea id="message-editor" placeholder="Customize your message here..."></textarea>
+                    <div class="placeholder-info">
+                        <p>Available placeholders:</p>
+                        <span class="placeholder-tag">{ARTIST_NAME}</span>
+                        <span class="placeholder-tag">{TRACK_NAME}</span>
+                        <span class="placeholder-tag">{LABEL_NAME}</span>
+                        <span class="placeholder-tag">{DATE}</span>
+                        <span class="placeholder-tag">{REASON}</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="copy-message">Copy to Clipboard</button>
+                    <button id="preview-message">Preview</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Toast -->
+        <div id="toast" class="toast">
+            <span id="toast-message">Message copied to clipboard!</span>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
